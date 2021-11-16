@@ -65,8 +65,11 @@ public class MemberDAO {
 		return result;
 	}
 	
-	// select for login
-	//public 
+	/* select for login
+	public List<MemberDTO> loginMember(MemberDTO memberDTO) {
+		
+	}
+	*/
 	
 	
 }

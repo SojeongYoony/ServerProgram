@@ -41,13 +41,14 @@ public class TopListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce)  { 
     	try {
     		JobDetail job = JobBuilder.newJob(TopJob.class)
-    				.withIdentity("job4", "group4")
+    				.withIdentity("job", "group")
     				.build();
     		
     		// 2. Trigger
+    		/*    크론메이커 주소  DONT FORGET!!!!!!!!! ::     http://www.cronmaker.com/                          */
     		Trigger trigger = TriggerBuilder.newTrigger()	// (String name, String group) ("등록이름", "등록그룹")
-    				.withIdentity("trigger4", "group4")
-    				.withSchedule(CronScheduleBuilder.cronSchedule("0 29 11 1/1 * ? *"))
+    				.withIdentity("trigger", "group")
+    				.withSchedule(CronScheduleBuilder.cronSchedule("0 0/1 * 1/1 * ? *"))
     				.build();
     		// 3. scheduler에 job과 trigger등록
     		//		  scheduleJob(JobDetail arg0, Trigger arg1) throws SchedulerException

@@ -55,6 +55,7 @@ public class MemberController extends HttpServlet {
 	
 	case "joinSuccPage.do" :
 		mav = new ModelAndView("views/joinsucc.jsp", false);
+	break;
 	
 	case "deletePage.do" :
 		mav = new ModelAndView("views/deletesucc.jsp", false);

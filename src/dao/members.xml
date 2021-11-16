@@ -31,14 +31,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<!-- member insert -->
 	<insert id="insertMember" parameterType="dto.MemberDTO">
-		INSERT INTO board (no, id, name, grade, point)
+		INSERT INTO members (no, id, name, grade, point)
 		VALUES (member_seq.nextval, #{id}, #{name}, #{grade}, #{point})
 	</insert>
 
 	<!-- select for login -->
-	<!-- 
-	 <select id="selectId" parameterType=""
-	 -->
+	 <select id="loginMember" parameterType="dto.MemberDTO">
+	 	SELECT id, name
+	 	  FROM members
+	 	 WHERE id = #{id}
+	 </select>
+	
 
 
 

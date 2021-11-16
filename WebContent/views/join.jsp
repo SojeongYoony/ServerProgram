@@ -50,7 +50,7 @@ $(document).ready(function(){
 		<span>이름</span><input type="text" name="name" id="name">
 		</div>
 		<input type="hidden" name="grade" value="bronze">
-		<input type="hidden" name="point" value="0">
+		<input type="hidden" name="point" value="1000">
 
 		
 		

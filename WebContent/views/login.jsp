@@ -1,3 +1,4 @@
+<%@page import="dao.MemberDAO"%>
 <%@page import="dto.MemberDTO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -29,8 +30,8 @@
 	</span>
 	</form>
 	
+
 <%--
-<%
 	request.setCharacterEncoding("UTF-8");
 
 	String id = request.getParameter("id");
@@ -40,14 +41,7 @@
 	memberDTO.setId(id);
 	memberDTO.setName(name);
 	
-	MemberDTO loginUser = null;
-	if(memberDTO.getId().equals(id)) {
-		if(memberDTO.getName().equals(name)) {
-			loginUser = new MemberDTO();
-			loginUser.setId(id);
-			loginUser.setName(name);
-		}
-	}
+	MemberDAO dao = MemberDAO.getInstance();
 	
 	if (loginUser != null) {
 		session.setAttribute("loginUser", loginUser);
@@ -55,8 +49,8 @@
 	
 	response.sendRedirect("/ServerProgram/loginPage.do");
 
-%>
- --%>
+--%>
+
 
 
 
