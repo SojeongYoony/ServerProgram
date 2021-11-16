@@ -31,3 +31,9 @@
     INSERT INTO MEMBERS VALUES (MEMBER_SEQ.NEXTVAL, 'prodo', '프로도', 'gold', 4500);
 
     COMMIT
+    
+
+    
+    
+    
+    
