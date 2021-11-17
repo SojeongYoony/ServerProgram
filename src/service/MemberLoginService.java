@@ -1,11 +1,10 @@
-package controller;
+package service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import common.ModelAndView;
 import dao.MemberDAO;
-import service.MemberService;
 
 public class MemberLoginService implements MemberService {
 

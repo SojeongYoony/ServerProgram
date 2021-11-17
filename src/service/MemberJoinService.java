@@ -1,4 +1,4 @@
-package controller;
+package service;
 
 import java.io.PrintWriter;
 
@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 import common.ModelAndView;
 import dao.MemberDAO;
 import dto.MemberDTO;
-import service.MemberService;
 
 public class MemberJoinService implements MemberService {
 

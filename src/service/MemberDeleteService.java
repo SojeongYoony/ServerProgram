@@ -1,4 +1,4 @@
-package controller;
+package service;
 
 import java.io.PrintWriter;
 import java.util.Optional;
@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import common.ModelAndView;
 import dao.MemberDAO;
-import service.MemberService;
 
 public class MemberDeleteService implements MemberService {
 
