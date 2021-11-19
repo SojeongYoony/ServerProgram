@@ -55,7 +55,7 @@ public class MemberDAO {
 	
 	// insert
 	public int insertMember(MemberDTO memberDTO) {
-		SqlSession ss = factory.openSession(false);
+		SqlSession ss = factory.openSession(false); // auto commit 
 		int result = ss.insert(NAMESPACE + ".insertMember", memberDTO);
 		
 		if(result > 0) {
